@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply rounded h-auto w-auto bg-neutral-200 enabled:hover:bg-neutral-300 enabled:active:bg-neutral-400 disabled:text-neutral-400 dark:bg-neutral-700 px-2 py-1 dark:enabled:hover:bg-neutral-600 dark:enabled:active:bg-neutral-500 dark:disabled:text-neutral-500;
+	}
+    .fancy-button {
+        @apply px-2 py-1 rounded disabled:bg-neutral-200 disabled:text-neutral-400 enabled:bg-gradient-to-r enabled:hover:brightness-90 enabled:active:brightness-75 enabled:text-white dark:disabled:bg-neutral-600
+    }
+    .modal {
+        @apply absolute p-2 rounded outline outline-neutral-500 bg-white dark:bg-neutral-700;
+    }
+    input {
+        @apply px-1 rounded bg-neutral-200 dark:bg-neutral-800;
+    }
+    textarea {
+        @apply p-1 rounded bg-neutral-200 dark:bg-neutral-800;
+    }
+    .secondary-text {
+        @apply text-neutral-600 dark:text-neutral-300;
+    }
+	.error-text {
+		@apply text-red-600 dark:text-red-400;
+	}
+}
